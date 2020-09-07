@@ -1,0 +1,9 @@
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\bin\Debug\netstandard2.0\Pliki.Domain.deps.json
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\bin\Debug\netstandard2.0\Pliki.Domain.dll
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\bin\Debug\netstandard2.0\Pliki.Domain.pdb
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.csprojAssemblyReference.cache
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.AssemblyInfoInputs.cache
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.AssemblyInfo.cs
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.csproj.CoreCompileInputs.cache
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.dll
+C:\Users\knrdz\OneDrive\Dokumenty\web\kursASP.Net\Pliki\Pliki.Domain\obj\Debug\netstandard2.0\Pliki.Domain.pdb
