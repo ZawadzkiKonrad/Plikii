@@ -13,48 +13,58 @@ namespace Pliki.App.Menagers
    public class ItemMenager: BaseService<Item>
     {
         private readonly MenuActionService _actionService;
-        public IService<Item> _itemService;
+        private IService<Item> _itemService;
 
-
-
-        public new List<Item> Items { get; set; } = new List<Item>();
-        
-
-
+       
         public ItemMenager(MenuActionService actionService, IService<Item> itemService)
         {
             _itemService = itemService;
             _actionService = actionService;
         }
 
-        public ItemMenager(MenuActionService actionService)
-        {
-            _actionService = actionService;
-
-        }
-        public void AddNewItem()
+       
+        //public void AddNewItem()
+        //{
+        //    var addNewItemMenu = _actionService.GetMenuActionsByMenuName("AddNewItemMenu");
+        //    Console.WriteLine("Wybierz typ pliku:");
+        //    for (int i = 0; i < addNewItemMenu.Count; i++)
+        //    {
+        //        Console.WriteLine($"{addNewItemMenu[i].Id}. {addNewItemMenu[i].Name}");
+        //    }
+        //    int lastId = _itemService.GetLastId();
+        //    var operation = Console.ReadKey();
+        //    Int32.TryParse(operation.KeyChar.ToString(), out int typeId);
+        //    Console.WriteLine("Podaj nazwe pliku:");
+        //    var name = Console.ReadLine();
+            
+        //    Item item = new Item(lastId+1,name.ToString(), typeId);
+            
+        //    Items.Add(item);
+           
+            
+        //}
+        public int AddNewItem() HWDP
         {
             var addNewItemMenu = _actionService.GetMenuActionsByMenuName("AddNewItemMenu");
-            Console.WriteLine("Wybierz typ pliku:");
+            Console.WriteLine("Podaj typ pliku:");
             for (int i = 0; i < addNewItemMenu.Count; i++)
             {
                 Console.WriteLine($"{addNewItemMenu[i].Id}. {addNewItemMenu[i].Name}");
             }
-            int lastId = _itemService.GetLastId();
+
             var operation = Console.ReadKey();
-            Int32.TryParse(operation.KeyChar.ToString(), out int typeId);
-            Console.WriteLine("Podaj nazwe pliku:");
+            int typeId;
+            Int32.TryParse(operation.KeyChar.ToString(), out typeId);
+            Console.WriteLine("Podaj nazqwe pliku:");
             var name = Console.ReadLine();
-            
-            Item item = new Item(lastId,name.ToString(), typeId);
-            
-            Items.Add(item);
-           
-            
+            var lastId = _itemService.GetLastId();
+            Item item = new Item(lastId + 1, name, typeId);
+            _itemService.AddItem(item);
+            return item.Id;
         }
 
-       
-       public void RemoveItem()
+
+        public void RemoveItem()
 
         {
             Console.WriteLine("Podaj id pliku do usunięcia:");

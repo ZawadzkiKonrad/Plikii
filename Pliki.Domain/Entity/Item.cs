@@ -24,10 +24,7 @@ namespace Pliki.Domain.Entity
             TypeId = typeId;
         }
 
-        public Item(int removeId)
-        {
-
-        }
+    
 
     }
    
