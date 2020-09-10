@@ -43,7 +43,7 @@ namespace Pliki.App.Menagers
            
             
         //}
-        public int AddNewItem() HWDP
+        public int AddNewItem() 
         {
             var addNewItemMenu = _actionService.GetMenuActionsByMenuName("AddNewItemMenu");
             Console.WriteLine("Podaj typ pliku:");
